@@ -3,7 +3,7 @@ from gym import spaces
 import numpy as np
 import pandas as pd
 
-from stable_baselines3 import A2C
+from stable_baselines import A2C
 from simulation_environment import SimulationEnvironment
 from audio_feature_extractor import AudioFeatureExtractor 
 

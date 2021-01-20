@@ -1,11 +1,11 @@
 seaborn==0.11.0
-stable_baselines3==0.10.0
-streamlit==0.73.1
+numpy==1.19.4
+stable_baselines==2.10.1
 librosa==0.8.0
+streamlit==0.73.1
+plotly==4.5.1
 pandas==1.1.1
 pydub==0.24.1
-numpy==1.19.4
 gym==0.18.0
-plotly==4.5.1
 Pillow==8.1.0
 scikit_learn==0.24.1

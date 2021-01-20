@@ -3,9 +3,8 @@ from gym import spaces
 import numpy as np
 import pandas as pd
 
-  
 
-from stable_baselines3 import A2C
+from stable_baselines import A2C
 from hrv_classifier import HrvClassifier
 
 class SimulationEnvironment(gym.Env):
