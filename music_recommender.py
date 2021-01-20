@@ -12,7 +12,7 @@ class MusicRecommender():
     This class defines the recommender system pipeline
     """
     
-    def __init__(self, base_model='recommender_hrv_based', db='../data/simulation_training_hrv_recommender.csv'):
+    def __init__(self, base_model='recommender_hrv_based', db='data/simulation_training_hrv_recommender.csv'):
         self.db = pd.read_csv(db)
         self.env = SimulationEnvironment(train=self.db)
         self.model = A2C('MlpPolicy', self.env, verbose=1)
