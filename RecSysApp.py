@@ -28,7 +28,7 @@ session_state = SessionState.get(mood=0, age=0,gender="Male",top_k=[],feedback="
 
 ##################### HEADER #########################
 st.header('MUSIC RECOMMENDATION')
-image = Image.open(f'../image_source/music-makes-me-happy-by-plastickheart-700x500.jpg')
+image = Image.open('image_source/music-makes-me-happy-by-plastickheart-700x500.jpg')
 st.sidebar.image(image,use_column_width=True)
 # simple description
 st.sidebar.title('EMOTION-BASED MUSIC RECOMMENDATION SYSTEM')
@@ -57,7 +57,7 @@ def display_col1_description():
                     Returns:
                             -
     """
-    wave_image = Image.open(f'../image_source/audio_wave.jpg')
+    wave_image = Image.open('image_source/audio_wave.jpg')
     col1.image(wave_image,width=300)
     col1.write()
     col1.write()
@@ -191,7 +191,7 @@ if len(best_pred) != 0 :
 ##################### HRV STRESS ANALYSIS #########################
 
 st.header('SHARE YOUR FEELINGS, PROVIDE YOUR FEEDBACK')
-hrv_image = Image.open(f'../image_source/HRV.jpeg')
+hrv_image = Image.open('/image_source/HRV.jpeg')
 st.image(hrv_image,width=300)
 hrv_file = st.file_uploader("Upload your HRV metrics for analysis")
 
