@@ -8,6 +8,6 @@ streamlit==0.73.1
 pydub==0.24.1
 stable_baselines==2.10.1
 Pillow
-scikit_learn=0.23.2
+scikit_learn==0.23.2
 tensorflow==1.13.2
 catboost
