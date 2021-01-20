@@ -10,3 +10,4 @@ stable_baselines==2.10.1
 Pillow
 scikit_learn==0.24.1
 tensorflow==1.13.2
+catboost
