@@ -178,7 +178,7 @@ if len(best_pred) != 0 :
 
     for i in range(len(session_state.top_k)):
         col2.header("RECOMMENDED FOR YOU")
-        col2.markdown('<span class="badge badge-pill badge-success">'+session_state.top_k[i].split('\\')[-1]+ '</span>',unsafe_allow_html=True)
+        col2.markdown('<span class="badge badge-pill badge-success">'+session_state.top_k[i].split('/')[-1]+ '</span>',unsafe_allow_html=True)
         play_music(session_state.top_k[i])  
         fig = px.pie(emotion.T.reset_index(), values=best_pred[i], names='index', color='index',color_discrete_sequence=px.colors.sequential.RdBu,width=400, height=200)
         col2.write(fig)
