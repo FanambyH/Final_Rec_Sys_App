@@ -1,11 +1,11 @@
 librosa==0.8.0
 plotly==4.5.1
 pandas==1.1.1
-gym==0.18.0
+gym
 seaborn==0.11.0
 numpy==1.19.4
 streamlit==0.73.1
 pydub==0.24.1
 stable_baselines==2.10.1
-Pillow==8.1.0
+Pillow
 scikit_learn==0.24.1
