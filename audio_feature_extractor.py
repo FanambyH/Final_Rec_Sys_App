@@ -11,10 +11,10 @@ class AudioFeatureExtractor():
     def __init__(self):
         # Model in charge of Detecting Music Genre
         self.model = pickle.load(
-            open('../model_saved/emo_genre_clf_model.sav', 'rb'))    
+            open('model_saved/emo_genre_clf_model.sav', 'rb'))    
 
         # Utility Scaler
-        self.scaler = pickle.load(open('../model_saved/Scaler_Extractor.sav', 'rb'))
+        self.scaler = pickle.load(open('model_saved/Scaler_Extractor.sav', 'rb'))
         
         # List of Audio Features
         self.features = ['chroma_sftf', 'rolloff', 'zero_crossing_rate', 'rmse', 'flux', 'contrast', 'flatness',
