@@ -191,7 +191,7 @@ if len(best_pred) != 0 :
 ##################### HRV STRESS ANALYSIS #########################
 
 st.header('SHARE YOUR FEELINGS, PROVIDE YOUR FEEDBACK')
-hrv_image = Image.open('/image_source/HRV.jpeg')
+hrv_image = Image.open('image_source/HRV.jpeg')
 st.image(hrv_image,width=300)
 hrv_file = st.file_uploader("Upload your HRV metrics for analysis")
 
