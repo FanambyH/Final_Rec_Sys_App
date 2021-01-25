@@ -13,5 +13,4 @@ This project was deployed using streamlit sharing framework and its built-in sha
 Fanamby T. RANDRIAMAHENINTSOA 
 
 # Acknowledgements 
-I warmly thank the DSI tutors for their valuable support and advice during the realization of this project. 
-
+I am grateful to the Africa 2020 Intensive Data Science (DSI) Program for the wonderful opportunity to develop this project. Heartfelt thanks to the DSI tutors for their valuable support during the realization of this project.
