@@ -244,6 +244,7 @@ db = Database()
 if st.button('Send feedback'):
     # map feedback to top k recommendation
     df_feedback = map_feedback(session_state.top_k,session_state.feedback,session_state.age,session_state.mood,session_state.gender)
+    st.write(df_feedback)
     # save feedback to the database 
     db.populate_feedback_table(df_feedback)
     st.write(db.get_feedback_list())
