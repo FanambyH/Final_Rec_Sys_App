@@ -232,9 +232,9 @@ def map_feedback(top_k,feedback,age,mood,gender):
     df_fb = pd.DataFrame(columns=['title','feedback','age','mood','gender'])
     df_fb['title'] =  top_k
     df_fb['feedback'] = [feedback] * len(top_k)
-    df_fb['age'] = age *len(top_k)
-    df_fb['mood'] = mood *len(top_k)
-    df_fb['gender'] = gender *len(top_k)
+    df_fb['age'] = [age]  *len(top_k)
+    df_fb['mood'] = [mood] *len(top_k)
+    df_fb['gender'] = [encode_gender(gender)] *len(top_k)
 
     return df_fb
 
