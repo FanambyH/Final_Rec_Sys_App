@@ -8,8 +8,6 @@ This project was developed during the Africa 2020 Data Science Intensive (DSI).
 This project was deployed using streamlit sharing framework and its built-in sharing feature. 
 [System available here](https://share.streamlit.io/fanambyh/final_rec_sys_app/main/RecSysApp.py)
 
-# Project description
-
 # Author
 Fanamby T. RANDRIAMAHENINTSOA 
 
