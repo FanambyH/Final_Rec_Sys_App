@@ -13,7 +13,7 @@ This project was deployed using streamlit sharing framework and its built-in sha
 Fanamby T. RANDRIAMAHENINTSOA 
 
 # License 
-[a link] (https://mit-license.org/)
+[MIT](https://mit-license.org/)
 
 # Acknowledgements 
 I am grateful to the Africa 2020 Intensive Data Science (DSI) Program for the wonderful opportunity to develop this project. Heartfelt thanks to the DSI tutors for their precious support during the realization of this project.
