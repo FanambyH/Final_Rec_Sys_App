@@ -247,6 +247,6 @@ if st.button('Send feedback'):
     st.write(df_feedback)
     # save feedback to the database 
     db.populate_feedback_table(df_feedback)
-    st.write(db.get_feedback_list())
+    st.info("Saved! Thanks for providing your feedback")
 
 ##################### SAVE FEEDBACK INTO THE DATABASE #############

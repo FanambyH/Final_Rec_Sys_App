@@ -59,7 +59,7 @@ class Database():
                         the last row of the table
         """
         sql = 'INSERT INTO feedback (title,feedback,age,mood,gender) VALUES(?,?,?,?,?)'
-        self.cur.execute(sql, (title,feedback))
+        self.cur.execute(sql, (title,feedback,age,mood,gender))
         return self.cur.lastrowid
 
     ############## READ QUERY  ###################
