@@ -92,7 +92,7 @@ class Database():
         try:
             for i in range(df.shape[0]):
                 #insert into the table 
-                fb = self.insert_new_feedback_query(df['title'].iloc[i],df['feedback'].iloc[i])
+                fb = self.insert_new_feedback_query(df['title'].iloc[i],df['feedback'].iloc[i],df['age'].iloc[i],df['mood'].iloc[i],df['gender'].iloc[i])
                 # commit the statements
                 self.con.commit()
         except:

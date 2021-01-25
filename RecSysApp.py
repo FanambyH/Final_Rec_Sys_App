@@ -168,6 +168,7 @@ emotion = pd.DataFrame()
 
 # recommend the music 
 if col1.button('Recommend'):
+    col2.header("RECOMMENDED FOR YOU")
     session_state.top_k = []
     best_pred, emotion = recommender.predict_top_k(list(fileslist['Title']), int(session_state.age), encode_gender(session_state.gender),session_state.mood)
 
@@ -177,7 +178,6 @@ if len(best_pred) != 0 :
         session_state.top_k.append(fileslist['Title'].iloc[best_pred[i]])
 
     for i in range(len(session_state.top_k)):
-        col2.header("RECOMMENDED FOR YOU")
         col2.markdown('<span class="badge badge-pill badge-success">'+session_state.top_k[i].split('/')[-1]+ '</span>',unsafe_allow_html=True)
         play_music(session_state.top_k[i])  
         fig = px.pie(emotion.T.reset_index(), values=best_pred[i], names='index', color='index',color_discrete_sequence=px.colors.sequential.RdBu,width=400, height=200)
