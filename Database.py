@@ -40,12 +40,15 @@ class Database():
         CREATE TABLE feedback (
             id_fb integer PRIMARY KEY AUTOINCREMENT,
             title text NOT NULL,
-            feedback text NOT NULL)"""
+            feedback text NOT NULL,
+            age integer,
+            mood integer,
+            gender integer)"""
         self.cur.execute(sentiment_sql)
     
      ############## INSERT QUERY  ###################
 
-    def insert_new_feedback_query(self,title,feedback):
+    def insert_new_feedback_query(self,title,feedback,age,mood,gender):
         """
         This function allows to insert new feedback data into the feedback table .
 
@@ -55,7 +58,7 @@ class Database():
                 Returns:
                         the last row of the table
         """
-        sql = 'INSERT INTO feedback (title,feedback) VALUES(?,?)'
+        sql = 'INSERT INTO feedback (title,feedback,age,mood,gender) VALUES(?,?,?,?,?)'
         self.cur.execute(sql, (title,feedback))
         return self.cur.lastrowid
 

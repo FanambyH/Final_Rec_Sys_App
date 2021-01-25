@@ -217,7 +217,7 @@ if st.button('Analyze'):
 
 ##################### SAVE FEEDBACK INTO THE DATABASE #############
   
-def map_feedback(top_k,feedback):
+def map_feedback(top_k,feedback,age,mood,gender):
     """
         This function maps the given feedback to the proposed music 
 
@@ -229,9 +229,12 @@ def map_feedback(top_k,feedback):
                         df_fb (DataFrame): the feedback data ready to be saved
                         
     """
-    df_fb = pd.DataFrame(columns=['title','feedback'])
+    df_fb = pd.DataFrame(columns=['title','feedback','age','mood','gender'])
     df_fb['title'] =  top_k
     df_fb['feedback'] = [feedback] * len(top_k)
+    df_fb['age'] = age *len(top_k)
+    df_fb['mood'] = mood *len(top_k)
+    df_fb['gender'] = gender *len(top_k)
 
     return df_fb
 
@@ -240,7 +243,7 @@ db = Database()
          
 if st.button('Send feedback'):
     # map feedback to top k recommendation
-    df_feedback = map_feedback(session_state.top_k,session_state.feedback)
+    df_feedback = map_feedback(session_state.top_k,session_state.feedback,session_state.age,session_state.mood,session_state.gender)
     # save feedback to the database 
     db.populate_feedback_table(df_feedback)
     st.write(db.get_feedback_list())
