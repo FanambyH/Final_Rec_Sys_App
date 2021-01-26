@@ -6,6 +6,16 @@ This project was developed during the Africa 2020 Data Science Intensive (DSI).
 You can read more about the project 
 [here](https://henintsoarandriaf.medium.com/emotion-based-music-recommendation-system-using-a-deep-reinforcement-learning-approach-6d23a24d3044)
 
+# To run the project on your local machine
+Clone the repository
+```git clone https://github.com/FanambyH/Final_Rec_Sys_App```
+
+Install the required packages
+```pip3 install -r requirements.txt```
+
+Run the app
+```streamlit run RecSysApp.py```
+
 # Deployment
 This project was deployed using streamlit sharing framework and its built-in sharing feature. 
 [System available here](https://share.streamlit.io/fanambyh/final_rec_sys_app/main/RecSysApp.py)
