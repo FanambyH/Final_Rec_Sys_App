@@ -4,7 +4,7 @@ The purpose of this project is to recommend the most suitable top k songs to the
 # Description
 This project was developed during the Africa 2020 Data Science Intensive (DSI). 
 You can read more about the project 
-[here] (https://henintsoarandriaf.medium.com/emotion-based-music-recommendation-system-using-a-deep-reinforcement-learning-approach-6d23a24d3044)
+[here](https://henintsoarandriaf.medium.com/emotion-based-music-recommendation-system-using-a-deep-reinforcement-learning-approach-6d23a24d3044)
 
 # Deployment
 This project was deployed using streamlit sharing framework and its built-in sharing feature. 
